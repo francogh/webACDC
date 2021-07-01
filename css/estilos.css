@@ -12,23 +12,23 @@ body{
 header{
     width: 100%;
     height: 100vh;
-    background:url(../img/803077.jpg) no-repeat fixed;
+    background:url(../img/N4hL7.jpg) no-repeat fixed;
     background-size: cover;
     position: relative;
 }
 @media (max-width: 800px){
     header{
-        background: url(../img/N4hL7I.jpg) no-repeat;
+        background: url(../img/N4hL7I.jpg) no-repeat fixed;
         position: relative;
         background-size: contain;
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 525px){
     header{
-        background: url(../img/N4hL7I2.jpg) no-repeat;
+        background: url(../img/N4hL7I300.jpg) no-repeat fixed;
         position: relative;
-        background-size: cover;
+        background-size:cover;
     }
 }
 
@@ -37,6 +37,7 @@ header{
 /***************************NAVBAR********************/
 .navbar{
     background-color: black;
+    font-size: 15px;
 }
 
 .icon-img{
@@ -44,18 +45,19 @@ header{
 }
 
 .about {
-	padding:280px 0 0 0;
+	margin-top: 330px;
 	align-items: center;
 }
 
 .about .text-center h1 {
 	text-transform:uppercase;
-	font-size:35px;
+	font-size:40px;
     color: #fff;
     align-items: center;
     font-weight: bold;
-    -webkit-text-stroke: 1px black;
-    font-family: monospace;
+    
+    font-family: Helvetica, sans-serif;
+    opacity: 0.7;
 }
 
 .about .text-center h3 {
@@ -64,22 +66,23 @@ header{
     align-items: center;
     font-size: 15px;
     font-family: 'PT sans', sans-serif;
+    opacity: 0.7;
 } 
-@media (max-width: 800px){
+@media (max-width: 1000px){
     .about {
-        padding:280px 0 0 0;
+        
         align-items: center;
     }
     .about .text-center h1 {
         text-transform:uppercase;
-        font-size:30px;
+        font-size:25px;
         color: #fff;
         align-items: center;
         font-weight: bold;
-        -webkit-text-stroke: 1px black;
+        
     }
     .about .text-center h3 {
-        margin-top:15px;
+        margin-top:10px;
         color: #fff;
         align-items: center;
         font-size: 15px;
@@ -88,7 +91,7 @@ header{
 
 @media (max-width: 600px){
     .about {
-        padding:300px 0 0 0;
+       
         align-items: center;
     }
     .about .text-center h1 {
@@ -97,12 +100,52 @@ header{
         color: #fff;
         align-items: center;
         font-weight: bold;
-        -webkit-text-stroke: 1px black;
+        
     }
     .about .text-center h3 {
-        margin-top:10px;
+      
+        
         color: #fff;
         align-items: center;
         font-size: 11px;
   }
 }
+@media (max-width: 420px){
+    .about {
+        margin-top: 220px;
+        align-items: center;
+    }
+    .about .text-center h1 {
+        text-transform:uppercase;
+        font-size:10px;
+        color: #fff;
+        align-items: center;
+        font-weight: bold;
+        
+    }
+    .about .text-center h3 {
+        margin-top:10px;
+        color: #fff;
+        align-items: center;
+        font-size: 9px;
+  }
+}
+
+
+/**********************footer*********************/
+#footer {
+    background: #111;
+    padding: 30px 0;
+    color: #fff;
+  }
+  
+  #footer .copyright {
+    text-align: center;
+  }
+  
+  #footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #ccc;
+  }
