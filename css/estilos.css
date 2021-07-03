@@ -6,7 +6,7 @@
 
 body{
     font-family: 'PT sans', sans-serif;
-    background-color: black;
+    background-color: rgb(250, 249, 249);
 }
 
 .header-ind{
@@ -151,13 +151,18 @@ body{
   }
 
 
-  /*******************integrantes************************/
-  /*.action {
+  /*******************integrantes IMAGEN DERECHA************************/
+
+
+  .action {
+    margin: 90px 100px; 
     overflow: visible;
     padding: 0px;
     width: 100;
-    background: #f2f2f2;
+    background: #dbdada;
     position: relative;
+    animation: fadeInUp;
+    animation-duration: 1s;
   }
   .action .left-text {
     padding: 70px 0;
@@ -175,30 +180,124 @@ body{
   }
   .action .left-text em {
     font-size: 16px;
-    color: #aaa;
+    color: rgb(126, 125, 125);
     font-weight: 300;
     font-style: normal;
   }
-  .action .image {
+  .action .right-image-angus {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 40%;
     height: 100%;
     background-size: cover;
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-image: url(../img/7.jpg);
-  }*/
-
-  .section-int .image{
+    background-image: url(../img/angus.jpg);
+  }
+  .action .right-image-angus:hover {
+   
+  }
+  /*******************integrantes IMAGEN DERECHA************************/
+  .action-right {
+    margin: 90px 100px; 
+    overflow: visible;
+    padding: 10px;
+    width: 100;
+    background: #dbdada;
+    position: relative;
+   
+    animation: fadeInUp;
+    animation-duration: 1s;
+  }
+  .action-right .right-text {
+    padding: 70px 0;
+    padding-right: 60px;
+    width: 50%;
+  }
+  .action-right .right-text h4 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .action-right .right-text p {
+    padding-top: 20px;
+  }
+  .action-right .right-text em {
+    font-size: 16px;
+    color: rgb(126, 125, 125);
+    font-weight: 300;
+    font-style: normal;
+  }
+  .action-right .left-image-brian {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 50%;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-size:cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../img/brian.jpg);
+  }
+  .action .right-image-clif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
     height: 100%;
     background-size: cover;
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-image: url(../img/7.jpg);
+    background-image: url(../img/clif.jpg);
+  }
+  .action-right .left-image-stevie {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../img/stevie.jpg);
+  }
+
+  .action .right-image-phil {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../img/phill.jpg);
+  }
+  .action-right .left-image-bon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../img/bon.jpg);
+  }
+  .action .right-image-malcom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../img/malcom.jpg);
+  }
+
+  .probando-ani{
+    color: #111;
   }
