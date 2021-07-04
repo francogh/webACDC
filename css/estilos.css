@@ -195,10 +195,7 @@ body{
     background-repeat: no-repeat;
     background-image: url(../img/angus.jpg);
   }
-  .action .right-image-angus:hover {
-   
-  }
-  /*******************integrantes IMAGEN DERECHA************************/
+  
   
   .action .right-image-brian {
     position: absolute;
@@ -270,8 +267,48 @@ body{
 
   
 
-  @media (max-width: 500px){
+  @media (max-width: 1000px){
     #action{
-      visibility: hidden;
+      display: none !important;
     }
+}
+.acordeon{
+  margin-top: 60px;
+}
+
+@media (min-width: 1000px){
+  .acordeon{
+    display: none !important;
+  }
+}
+
+.accordion .accordion-button{
+  background-color:rgb(202, 199, 199) ;
+}
+
+.accordion-body .img-fluid{
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
+
+.accordion-body p{
+  animation: fadeInUp;
+    animation-duration: 1s;
+}
+
+/*********************HISTORI******************/
+
+.history{
+  padding: 0;
+  margin-top: 60px;
+ 
+}
+.history .container .row{
+  margin: 0;
+  background-color: rgb(229, 226, 226);
+  align-items: top;
+  padding: 30px;
+  animation: fadeIn;
+  animation-duration: 3s;
+  font-family: 'PT sans'
 }
