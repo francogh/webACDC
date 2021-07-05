@@ -6,7 +6,7 @@
 
 body{
     font-family: 'PT sans', sans-serif;
-    background-color: rgb(250, 249, 249);
+    background-color: rgb(2, 2, 2);
 }
 
 .header-ind{
@@ -35,6 +35,9 @@ body{
 
 
 /***************************NAVBAR********************/
+#nav-link-spotify{
+  color:#1DD05D;
+}
 .navbar{
     background-color: black;
     font-size: 15px;
@@ -143,11 +146,17 @@ body{
     text-align: center;
   }
   
-  #footer .credits {
-    padding-top: 10px;
+ 
+  #footer .icon-redes{
     text-align: center;
-    font-size: 13px;
-    color: #ccc;
+  }
+
+  .icon-redes li{
+    list-style: none;
+    display: inline-flex;
+    font-size: 30px;
+    
+    padding: 10px;
   }
 
 
@@ -311,4 +320,117 @@ body{
   animation: fadeIn;
   animation-duration: 3s;
   font-family: 'PT sans'
+}
+
+
+/**************** REPRODUCTOR**********************/
+.spotify{
+  margin: 70px 0px;
+  
+  
+}
+
+.spotify .container{
+  width: 100%;
+  height: 80vh;
+  background: black;
+  padding: 30px;
+  border:#1DD05D inset 5px;
+  border-radius: 10px;
+  
+}
+
+.spotify .container .discografia{
+  height: 60vh;
+  overflow-y: scroll;
+  list-style: none;
+  color: rgb(201, 200, 200);
+  background: black;
+  left: 0;
+  
+}
+
+
+
+.spotify .container .disc{
+  color: rgb(201, 200, 200);
+  align-items: center;
+}
+.icon-spoty .fa-spotify{
+  color: #1DD05D
+}
+.icon-spoty h3{
+  color: #1DD05D;
+}
+
+.spotify .container .discografia li:hover{
+  cursor: pointer;
+  color: #1DD05D;
+  background: rgb(56, 56, 56);
+  transition: .5s;
+  
+}
+
+@media (max-width: 800px){
+  .spotify{
+    display: none !important;
+  }
+}
+
+/*********************  REPRODUCTOR MOVILE***************************/
+.spotify-mobile{
+  margin: 100px 30px;
+  background-color: rgb(160, 160, 160);
+  
+  
+}
+
+.spotify-mobile .container-mobile .discografia-mobile{
+  
+  height: 60vh;
+  overflow-y: scroll;
+  list-style: none;
+  color: rgb(201, 200, 200);
+  background: rgb(48, 47, 47);
+  left: 0;
+
+}
+
+
+.spotify-mobile .container-mobile .colum-mobile {
+  position: fixed;
+  background-color: rgb(48, 47, 47);
+  top: 60px;
+  left: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow:hidden;
+  width: 40px;
+  
+}
+
+
+.discografia-mobile::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+  display: none;  /* Ocultar scroll */
+}
+
+.spotify-mobile .container-mobile .discografia-mobile li:hover{
+  cursor: pointer;
+  color: #1DD05D;
+  background: rgb(56, 56, 56);
+  transition: .5s;
+  
+}
+
+.container-mobile .colum-mobile:hover{
+width: 300px;
+transition: .2s;
+}
+
+@media (min-width: 800px){
+  .spotify-mobile{
+    display: none !important;
+  }
 }
