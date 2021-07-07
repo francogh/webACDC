@@ -1,14 +1,14 @@
-'use strict'
-('#list')
-const list = document.querySelectorAll('#list')
-const activ = document.querySelectorAll('.activ')
+const audio = document.getElementById("audio");
+const playPause = document.getElementById("play");
 
-list.forEach((cadaList , i)=>{
-    list[i].addEventListener('click', () =>{
-
-        activ.forEach((cadaAvtive, i)=>{
-            activ[i].classList.remove('rep__hidd')
-        })
-        
-    })
-})
+playPause.addEventListener("click", () => {
+    if (audio.paused || audio.ended){
+        playPause.querySelector('.pause-btn').classList.toggle('hide');
+        playPause.querySelector('.play-btn').classList.toggle('hide')
+        audio.play();
+    } else {
+        audio.pause();
+        playPause.querySelector('.pause-btn').classList.toggle('hide');
+        playPause.querySelector('.play-btn').classList.toggle('hide');
+    }
+});
