@@ -173,14 +173,19 @@ body{
 
 
   /*******************integrantes IMAGEN DERECHA************************/
-
-
+  .action__cont{
+    background-color: var(--background);
+    border-radius: 12px;
+    box-shadow: 9px 9px 10px rgb(163, 177, 198, 0.6), 
+  -9px -9px 16px rgb(255, 255, 255, 0.5);
+  }
+  
   .action {
     margin: 90px 100px; 
     overflow: visible;
     padding: 0px;
     width: 100;
-    background: #dbdada;
+    background-color: var(--background);
     position: relative;
     animation: fadeInUp;
     animation-duration: 1s;
@@ -215,6 +220,7 @@ body{
     background-position: 0 0;
     background-repeat: no-repeat;
     background-image: url(../img/angus.jpg);
+    border-radius: 12px;
   }
   
   
@@ -228,6 +234,7 @@ body{
     background-position: 0 0;
     background-repeat: no-repeat;
     background-image: url(../img/brian.jpg);
+    border-radius: 12px;
   }
   .action .right-image-clif {
     position: absolute;
@@ -239,6 +246,7 @@ body{
     background-position: 0 0;
     background-repeat: no-repeat;
     background-image: url(../img/clif.jpg);
+    border-radius: 12px;
   }
   .action .right-image-stevie {
     position: absolute;
@@ -250,6 +258,7 @@ body{
     background-position: 0 0;
     background-repeat: no-repeat;
     background-image: url(../img/stevie.jpg);
+    border-radius: 12px;
   }
 
   .action .right-image-phil {
@@ -262,6 +271,7 @@ body{
     background-position: 0 0;
     background-repeat: no-repeat;
     background-image: url(../img/phill.jpg);
+    border-radius: 12px;
   }
   .action .right-image-bon {
     position: absolute;
@@ -273,6 +283,7 @@ body{
     background-position: 0 0;
     background-repeat: no-repeat;
     background-image: url(../img/bon.jpg);
+    border-radius: 12px;
   }
   .action .right-image-malcom {
     position: absolute;
@@ -284,6 +295,7 @@ body{
     background-position: 0 0;
     background-repeat: no-repeat;
     background-image: url(../img/malcom.jpg);
+    border-radius: 12px;
   }
 
   
@@ -454,7 +466,7 @@ transition: .2s;
 
 /*******************REPRODUCTOR BLANCO**************************/
 .body__spotify{
-  background-color: #fff;
+  background-color: var(--background);
   font-family:'Roboto Condensed', sans-serif;
 }
 
@@ -596,3 +608,4 @@ transition: .2s;
 .hide{
   display: none;
 }
+
