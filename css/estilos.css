@@ -172,7 +172,7 @@ body{
   }
 
 
-  /*******************integrantes IMAGEN DERECHA************************/
+  /*******************integrantes************************/
   .action__cont{
     background-color: var(--background);
     border-radius: 12px;
@@ -347,123 +347,6 @@ body{
 }
 
 
-/**************** REPRODUCTOR**********************/
-.spotify{
-  margin: 70px 0px;
-  
-  
-}
-
-.spotify .container{
-  width: 100%;
-  height: 80vh;
-  background: black;
-  padding: 30px;
-  border:#1DD05D inset 5px;
-  border-radius: 10px;
-  
-}
-
-.spotify .container .discografia{
-  height: 60vh;
-  overflow-y: scroll;
-  list-style: none;
-  color: rgb(201, 200, 200);
-  background: black;
-  left: 0;
-  
-}
-
-
-
-.spotify .container .disc{
-  color: rgb(201, 200, 200);
-  align-items: center;
-}
-.icon-spoty .fa-spotify{
-  color: #1DD05D
-}
-.icon-spoty h3{
-  color: #1DD05D;
-}
-
-.spotify .container .discografia li:hover{
-  cursor: pointer;
-  color: #1DD05D;
-  background: rgb(56, 56, 56);
-  transition: .5s;
-  
-}
-
-@media (max-width: 800px){
-  .spotify{
-    display: none !important;
-  }
-}
-
-/*********************  REPRODUCTOR MOVILE***************************/
-.spotify-mobile{
-  margin: 100px 30px;
-  background-color: rgb(160, 160, 160);
-  
-  
-}
-
-.spotify-mobile .container-mobile .discografia-mobile{
-  
-  height: 60vh;
-  overflow-y: scroll;
-  list-style: none;
-  color: rgb(201, 200, 200);
-  background: rgb(48, 47, 47);
-  left: 0;
-
-}
-
-
-.spotify-mobile .container-mobile .colum-mobile {
-  position: fixed;
-  background-color: rgb(48, 47, 47);
-  top: 60px;
-  left: 0;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow:hidden;
-  width: 40px;
-  
-}
-
-
-.discografia-mobile::-webkit-scrollbar {
-  width: 8px;     /* Tamaño del scroll en vertical */
-  height: 8px;    /* Tamaño del scroll en horizontal */
-  display: none;  /* Ocultar scroll */
-}
-
-.spotify-mobile .container-mobile .discografia-mobile li:hover{
-  cursor: pointer;
-  color: #1DD05D;
-  background: rgb(56, 56, 56);
-  transition: .5s;
-  
-}
-
-.container-mobile .colum-mobile:hover{
-width: 300px;
-transition: .2s;
-}
-
-@media (min-width: 800px){
-  .spotify-mobile{
-    display: none !important;
-  }
-}
-
-.rep__hidd{
-  display: none;
-}
-
-
 /*******************REPRODUCTOR BLANCO**************************/
 .body__spotify{
   background-color: var(--background);
@@ -608,6 +491,12 @@ transition: .2s;
 .hide{
   display: none;
 }
+@media (max-width: 400px){
+  .player{
+    width: 100%;
+    height: 100vh;
+  }
+}
 
 /************************NEWS******************/
 .body__news{
@@ -654,7 +543,7 @@ transition: .2s;
 }
 .blog__img .service-title{
   color: #fff;
-  font-size: 50px;
+  font-size: 3.5rem;
   font-weight:bolder;
   margin-top: 90px;
   position: relative;
@@ -669,7 +558,7 @@ transition: .2s;
 }
 .blog__img .sub-title{
   color: #fff;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight:bolder;
   position: relative;
 }
@@ -728,4 +617,129 @@ transition: .2s;
   -ms-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
+}
+
+
+/*********************CONTACT FORM********************/
+
+.container__form{
+  width: 100%;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.contact-page{
+  
+  background-color: var(--background);
+  
+  
+}
+.contactForm{
+  
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 9px 9px 10px rgb(163, 177, 198, 0.6), 
+  -9px -9px 16px rgb(255, 255, 255, 0.5);
+}
+.contactForm .title-form{
+  text-align: center;
+}
+
+.contactForm .form-group{
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 9px 9px 10px rgb(163, 177, 198, 0.6), 
+  -9px -9px 16px rgb(255, 255, 255, 0.5);
+}
+
+.contact-page h2 {
+	text-transform:uppercase;
+	font-weight:550;
+	font-size:24px;
+	margin-bottom:30px;
+}
+
+
+.contact-page .contact-form 
+.form-group label {
+  color: #4E4E4E;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.form-group .form-control {
+  padding: 7px 12px;
+  box-shadow: none;
+  border-radius:0;
+  resize: none;
+  overflow: hidden;
+  border: none;
+  background-color:var(--background)
+}
+
+textarea#message{
+   resize: none;
+   padding: 10px;
+   border-radius:0;
+}
+
+.contact-page .contact-wrap {
+  margin-top: 20px;
+}
+
+.validation {
+    color: red;
+    display:none;
+    margin: 0 0 20px;
+    font-weight:400;
+    font-size:13px;
+}
+
+#sendmessage {
+    color: green;
+    border:1px solid green;
+    display:none;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#errormessage {
+    color: red;
+    display:none;
+    border:1px solid red;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#sendmessage.show, #errormessage.show, .show {
+	display:block;
+
+}
+
+.player-btn{
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px #fff9, 8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+  color: var(--gray);
+  background-color: var(--background);
+  font-weight: bolder;
+  font-size: 1rem;
+}
+.player-btn:active{
+  box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 10px #fff9, inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+  
+}
+.player-btn:hover{
+  background-color: #e9eaec;
+  transition: 0.5s;
 }
