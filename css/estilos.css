@@ -743,3 +743,145 @@ textarea#message{
   background-color: #e9eaec;
   transition: 0.5s;
 }
+
+/***************PAGINA GENERICA DE NOTICIAS***************/
+.body__news-section{
+background: #2c2c2c;
+}
+
+.blog__img-section{
+  margin-top: 0px;
+  background: url(../img/descarga.jpg) fixed;
+  width: 100%;
+  height: 40vh;
+  background-position: center center;
+  position: relative;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+}
+.blog__img-section:before {
+	content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+.container-news{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.img-news{
+  width: 100%;
+}
+.news-img h6{
+  color: #9a9b9a;
+}
+.news-img h6 a{
+  text-decoration: none;
+  color: #B70000;
+  font-size: 20px;
+}
+
+.news-img h1{
+  color: #B70000;
+  font-weight: 800;
+  font-family:  'Oswald', Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+}
+.aside-news{
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 70px;
+}
+.h3-accordion{
+  margin: 10px;
+  color: #B70000;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+.data-news{
+  margin-top: 1rem;
+  color:#B70000;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+
+}
+
+.info-news{
+  color: #C0C0C0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.info-news a{
+  text-decoration: none;
+  color: #B70000;
+}
+
+.info-news a:hover{
+  text-decoration:underline;
+  color: #f30606;
+
+}
+
+@media (max-width: 992px){
+  .aside-news{
+    display: none;
+  }
+}
+
+.ctrl{
+  text-align: center;
+}
+
+
+
+/**********************************ACORDEON*****************/
+.accordeon-color2021{
+  background: url(http://www.ac-dc.net/img1/news-archive-bg-2020.jpg);
+  background-size: cover;
+}
+.accordeon-color2020{
+  background: url(http://www.ac-dc.net/img1/news-archive-bg-2019.jpg);
+  background-size: cover;
+}
+.accordeon-color2019{
+  background: url(http://www.ac-dc.net/img1/news-archive-bg-2017.jpg);
+  background-size: cover;
+}
+.accordeon-color2018{
+  background: url(http://www.ac-dc.net/img1/news-archive-bg-2016.jpg);
+  background-size: cover;
+}
+.accordeon-color2017{
+  background: url(http://www.ac-dc.net/img1/news-archive-bg-2015.jpg);
+  background-size: cover;
+}
+.data-news-years{
+  margin-top: 1rem;
+  color:#e70606;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  
+}
+.accordion-item{
+  margin-top: 20px ;
+}
+
+.accordion-body a{
+    margin: 0;
+    color: #B70000;
+    font-size: 15px;
+    text-decoration: none;
+}
+.accordion-body p{
+  margin: 0;
+  
+  font-size: 15px;
+  
+}
