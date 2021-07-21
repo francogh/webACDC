@@ -8,8 +8,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/0b51214ed8.js" crossorigin="anonymous"></script>
   <script src="./js/scrollreveal.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type='text/javascript'>
+        $(document).ready(function(){ 
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 100) { 
+                    $('#scroll').fadeIn(); 
+                } else { 
+                    $('#scroll').fadeOut(); 
+                } 
+            }); 
+            $('#scroll').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                return false; 
+            }); 
+        });
+        </script>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
@@ -52,6 +71,7 @@
       </div>
     </nav>
   </header>
+  <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
   <section id="blog-one" class="section-padding fadeInUp">
     <div class="container">
       <div class="row">
@@ -63,7 +83,7 @@
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="blog-sec">
             <div class="blog-img">
-              <a href="./news/new1.html">
+              <a href="./news/news1.html">
                 <img src="img/noti1.jpg" class="img-responsive">
               </a>
             </div>
@@ -76,14 +96,14 @@
                   <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
               </div>
               <p>El icónico cantante de AC / DC Ronald Belford "Bon" Scott habría cumplido 75 años el 9 de julio de 2021. Para conmemorar esta ocasión, la familia de Bon está lanzando el primer sitio web ...</p>
-              <a href="./news/new1.html" class="read-more">Leer más →</a>
+              <a href="./news/news1.html" class="read-more">Leer más →</a>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="blog-sec">
             <div class="blog-img">
-              <a href="./news/new2.html">
+              <a href="./news/news2.html">
                 <img src="img/noti2.jpg" class="img-responsive">
               </a>
             </div>
@@ -96,14 +116,14 @@
                   <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
               </div>
               <p>Brian Johnson interpretó "Back In Black" con los Foo Fighters en el evento "Vax Live 2021" celebrado en el SoFi Stadium de Los Ángeles anoche el domingo 2 de mayo ...</p>
-              <a href="./news/new2.html" class="read-more">Leer más →</a>
+              <a href="./news/news2.html" class="read-more">Leer más →</a>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="blog-sec">
             <div class="blog-img">
-              <a href="">
+              <a href="./news/news3.html">
                 <img src="img/noti3.jpg" class="img-responsive">
               </a>
             </div>
@@ -116,7 +136,7 @@
                   <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
               </div>
               <p>Brian Johnson, el legendario líder de AC / DC, publicará su tan esperada autobiografía, The Lives of Brian, el 26 de octubre de 2021. El libro será publicado en el Reino Unido ...</p>
-              <a href="" class="read-more">Leer más →</a>
+              <a href="./news/news3.html" class="read-more">Leer más →</a>
             </div>
           </div>
         </div>
@@ -129,7 +149,7 @@
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="blog-sec">
             <div class="blog-img">
-              <a href="">
+              <a href="./news/news4.html">
                 <img src="img/noti4.jpg" class="img-responsive">
               </a>
             </div>
@@ -142,14 +162,14 @@
                   <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
               </div>
               <p>Columbia Records emitirá un disco de 12 imágenes de "Through The Mists of Time / Witch's Spell" para el Record Store Day el 12 de junio de 2021. Este lanzamiento estará limitado a 5, 000 copias.</p>
-              <a href="" class="read-more">Leer más →</a>
+              <a href="./news/news4.html" class="read-more">Leer más →</a>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="blog-sec">
             <div class="blog-img">
-              <a href="">
+              <a href="./news/news5.html">
                 <img src="img/noti11.jpg" class="img-responsive">
               </a>
             </div>
@@ -162,14 +182,14 @@
                   <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
               </div>
               <p>Durante el "Dirty Deeds UK Tour" de AC / DC de 1976, Ray Lancaster, que trabajaba para un periódico estudiantil, entrevistó a Bon Scott en el backstage del Birmingham Town Hall el 29 de octubre ...</p>
-              <a href="" class="read-more">Leer más →</a>
+              <a href="./news/news5.html" class="read-more">Leer más →</a>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="blog-sec">
             <div class="blog-img">
-              <a href="">
+              <a href="./news/news6.html">
                 <img src="img/noti6.jpg" class="img-responsive">
               </a>
             </div>
@@ -182,7 +202,7 @@
                   <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
               </div>
               <p>El historiador y promotor musical de Adelaide Victor Marshall ha sido anunciado como el 'Indiana Jones' de la música australiana después de descubrir el 'santo grial' ...</p>
-              <a href="" class="read-more">Leer más →</a>
+              <a href="./news/news6.html" class="read-more">Leer más →</a>
             </div>
           </div>
         </div>
@@ -195,7 +215,7 @@
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="blog-sec">
             <div class="blog-img">
-              <a href="">
+              <a href="./news/news7.html">
                 <img src="img/noti7.jpg" class="img-responsive">
               </a>
             </div>
@@ -208,14 +228,14 @@
                   <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
               </div>
               <p>"Power Up" debutó en el # 1 en las listas de los siguientes países: Argentina, Australia (4 semanas en el # 1), Austria (# 2 en la semana 2), Bélgica (Valonia), Canadá ...</p>
-              <a href="" class="read-more">Leer más →</a>
+              <a href="./news/news7.html" class="read-more">Leer más →</a>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="blog-sec">
             <div class="blog-img">
-              <a href="">
+              <a href="./news/news8.html">
                 <img src="img/noti8.jpg" class="img-responsive">
               </a>
             </div>
@@ -228,14 +248,14 @@
                   <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
               </div>
               <p>El nuevo álbum de AC / DC, "Power Up", se lanzará en todo el mundo el 13 de noviembre. Grabado en Vancouver durante una sesión de seis semanas en agosto / septiembre de 2018...</p>
-              <a href="" class="read-more">Leer más →</a>
+              <a href="./news/news8.html" class="read-more">Leer más →</a>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="blog-sec">
             <div class="blog-img">
-              <a href="">
+              <a href="./news/news9.html">
                 <img src="img/noti9.jpg" class="img-responsive">
               </a>
             </div>
@@ -248,7 +268,7 @@
                   <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
               </div>
               <p>AC / DC acaba de anunciar a través de las redes sociales que su nuevo sencillo "Shot In The Dark" estará disponible el miércoles 7 de octubre a las 12:00 am EST EE.UU. / 5:00 am Londres / 6:00 am Europa.</p>
-              <a href="" class="read-more">Leer más →</a>
+              <a href="./news/news9.html" class="read-more">Leer más →</a>
             </div>
           </div>
         </div>
@@ -261,7 +281,7 @@
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="blog-sec">
             <div class="blog-img">
-              <a href="">
+              <a href="./news/news10.html">
                 <img src="img/noti10.jpg" class="img-responsive">
               </a>
             </div>
@@ -274,14 +294,14 @@
                   <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
               </div>
               <p>AC / DC confirmó hoy la nueva formación de la banda a través de una foto en sus sitios de redes sociales, que ahora consta de: Angus Young, Brian Johnson, Cliff Williams, Phil Rudd & Stevie Young, marcando el regreso de Brian, Cliff & Phil a ...</p>
-              <a href="" class="read-more">Leer más →</a>
+              <a href="./news/news10.html" class="read-more">Leer más →</a>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="blog-sec">
             <div class="blog-img">
-              <a href="">
+              <a href="./news/news11.html">
                 <img src="img/noti12.jpg" class="img-responsive">
               </a>
             </div>
@@ -294,14 +314,14 @@
                   <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
               </div>
               <p>"Back In Black" fue certificado 25x Platinum en los Estados Unidos por la RIAA el 6 de diciembre. El álbum fue certificado por última vez en 22x Platinum (22 millones de unidades...</p>
-              <a href="" class="read-more">Leer más →</a>
+              <a href="./news/news11.html" class="read-more">Leer más →</a>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="blog-sec">
             <div class="blog-img">
-              <a href="">
+              <a href="./news/news12.html">
                 <img src="img/noti13.jpg" class="img-responsive">
               </a>
             </div>
@@ -314,7 +334,7 @@
                   <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
               </div>
               <p>El mundo conocía al fundador de AC / DC, Malcolm Young, como uno de los mejores guitarristas de ritmos de rock de todos los tiempos. Su familia reveló tantas facetas diferentes...</p>
-              <a href="" class="read-more">Read more →</a>
+              <a href="./news/news12.html" class="read-more">Read more →</a>
             </div>
           </div>
         </div>

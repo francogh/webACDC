@@ -307,7 +307,11 @@ body{
 }
 .acordeon{
   margin-top: 60px;
+  margin-bottom: 5px;
+
 }
+
+/***********************CORDION INTEGRANTES ***********************/
 
 @media (min-width: 1000px){
   .acordeon{
@@ -315,9 +319,75 @@ body{
   }
 }
 
-.accordion .accordion-button{
-  background-color:rgb(202, 199, 199) ;
+.accordion-angus{
+  background: url(../img/slider-angus.jpg);
+  background-size: cover;
 }
+.accordion-angus h4{
+  margin-top: 10px;
+  color: #ebecec;
+  font-weight:500;
+}
+.accordion-brian{
+  background: url(../img/slider-brian.jpg);
+  background-size: cover;
+}
+.accordion-brian h4{
+  margin-top: 10px;
+  color: #ebecec;
+  font-weight:500;
+}
+.accordion-cliff{
+  background: url(../img/slider-cliff.jpg);
+  background-size: cover;
+}
+.accordion-cliff h4{
+  margin-top: 10px;
+  color: #ebecec;
+  font-weight:500;
+}
+.accordion-stevie{
+  background: url(../img/slider-stevie.jpg);
+  background-size: cover;
+}
+.accordion-stevie h4{
+  margin-top: 10px;
+  color: #ebecec;
+  font-weight:500;
+}
+.accordion-phil{
+  background: url(../img/slider-phill.jpg);
+  background-size: cover;
+}
+.accordion-phil h4{
+  margin-top: 10px;
+  color: #ebecec;
+  font-weight:500;
+}
+.accordion-bon{
+  background: url(../img/slider-bon.jpg);
+  background-size: cover;
+}
+.accordion-bon h4{
+  margin-top: 10px;
+  color: #ebecec;
+  font-weight:500;
+}
+.accordion-malcom{
+  background: url(../img/slider-malcom.jpg);
+  background-size: cover;
+}
+.accordion-malcom h4{
+  margin-top: 10px;
+  color: #ebecec;
+  font-weight:500;
+}
+.accordion-button::after {
+  background-color: #ebecec;
+}
+
+
+
 
 .accordion-body .img-fluid{
   animation: fadeInUp;
@@ -547,6 +617,7 @@ body{
   font-weight:bolder;
   margin-top: 90px;
   position: relative;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
 
 .blog__img .bottom-line{
@@ -561,6 +632,8 @@ body{
   font-size: 2rem;
   font-weight:bolder;
   position: relative;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;;
+  
 }
 
 
@@ -842,23 +915,23 @@ background: #2c2c2c;
 
 /**********************************ACORDEON*****************/
 .accordeon-color2021{
-  background: url(http://www.ac-dc.net/img1/news-archive-bg-2020.jpg);
+  background: url(../img/slider1.jpg);
   background-size: cover;
 }
 .accordeon-color2020{
-  background: url(http://www.ac-dc.net/img1/news-archive-bg-2019.jpg);
+  background: url(../img/slider2.jpg);
   background-size: cover;
 }
 .accordeon-color2019{
-  background: url(http://www.ac-dc.net/img1/news-archive-bg-2017.jpg);
+  background: url(../img/slider3.jpg);
   background-size: cover;
 }
 .accordeon-color2018{
-  background: url(http://www.ac-dc.net/img1/news-archive-bg-2016.jpg);
+  background: url(../img/slider4.jpg);
   background-size: cover;
 }
 .accordeon-color2017{
-  background: url(http://www.ac-dc.net/img1/news-archive-bg-2015.jpg);
+  background: url(../img/slider5.jpg);
   background-size: cover;
 }
 .data-news-years{
@@ -884,4 +957,36 @@ background: #2c2c2c;
   
   font-size: 15px;
   
+}
+/**********************BOTON IR ARRIBA*******************/
+#scroll {
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  cursor:pointer;
+  width:50px;
+  height:50px;
+  background-color:#3498db;
+  text-indent:-9999px;
+  display:none;
+  -webkit-border-radius:60px;
+  -moz-border-radius:60px;
+  border-radius:60px;
+  z-index: 1;
+}
+#scroll span {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-8px;
+  margin-top:-12px;
+  height:0;
+  width:0;
+  border:8px solid transparent;
+  border-bottom-color:#ffffff;
+}
+#scroll:hover {
+  background-color:#e74c3c;
+  opacity:1;filter:"alpha(opacity=100)";
+  -ms-filter:"alpha(opacity=100)";
 }
