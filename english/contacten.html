@@ -14,14 +14,14 @@
       src="https://kit.fontawesome.com/0b51214ed8.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/scrollreveal.js"></script>
+    <script src="../js/scrollreveal.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="shortcut icon" href="./img/iconacdc.png" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="shortcut icon" href="../img/iconacdc.png" />
     <title>Historia</title>
   </head>
 
@@ -32,7 +32,7 @@
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
-            ><img class="icon-img" src="img/E3tpmTntpdZ7E3teKXjAgQ.gif" alt=""
+            ><img class="icon-img" src="../img/E3tpmTntpdZ7E3teKXjAgQ.gif" alt=""
           /></a>
           <button
             class="navbar-toggler"
@@ -47,66 +47,59 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Idioma
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Ingles</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Español</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./historia.html">Historia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./integrantes.html">Integrantes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="nav-link-spotify" href="./spotify.html"
-                  ><i class="fab fa-spotify"></i>Spotify</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./news.html">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+                <li class="nav-item">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Idioma
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../english/contacten.html">Ingles</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../contact.html">Español</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../english/indexen.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../english/historiaen.html">History</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../english/integrantesen.html">Members</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="nav-link-spotify" href="../english/spotifyen.html"><i class="fab fa-spotify"></i>Spotify</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../english/newsen.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../english/contacten.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <section class="contact-page">
       <div class="container">
         <div class="row contact-wrap container__form">
           <div class="col-md-6 col-md-offset-3">
-            <div id="sendmessage">Su mensaje ha sido enviado, gracias!</div>
+            <div id="sendmessage">Your message has been sent, thank you!</div>
             <div id="errormessage"></div>
             <form action="" method="post" role="form" class="contactForm">
-                <h2 class="title-form">Formulario de contacto</h2>
+                <h2 class="title-form">Contact Form</h2>
               <div class="form-group">
                 <input
                   type="text"
                   name="name"
                   class="form-control"
                   id="name"
-                  placeholder="Nombre y Apellido"
+                  placeholder="Name"
                   data-rule="minlen:4"
-                  data-msg="Ingrese al menos 4 caracteres"
+                  data-msg="Please enter at least 4 characters"
                 />
                 <div class="validation"></div>
               </div>
@@ -116,9 +109,9 @@
                   class="form-control"
                   name="email"
                   id="email"
-                  placeholder="Correo Electrónico"
+                  placeholder="E-mail"
                   data-rule="email"
-                  data-msg="Por favor ingrese un mail valido"
+                  data-msg="Please enter a valid email"
                 />
                 <div class="validation"></div>
               </div>
@@ -128,9 +121,9 @@
                   class="form-control"
                   name="subject"
                   id="subject"
-                  placeholder="Asunto"
+                  placeholder="Contact subject"
                   data-rule="minlen:4"
-                  data-msg="Ingrese al menos 4 caracteres"
+                  data-msg="Please enter at least 4 characters"
                 />
                 <div class="validation"></div>
               </div>
@@ -140,8 +133,8 @@
                   name="message"
                   rows="5"
                   data-rule="required"
-                  data-msg="Por favor ingrese un mensaje"
-                  placeholder="Mensaje"
+                  data-msg="Please enter a message"
+                  placeholder="Message"
                 ></textarea>
                 <div class="validation"></div>
               </div>
@@ -152,14 +145,14 @@
                   class="btn btn-lg player-btn"
                   required="required"
                 >
-                  ENVIAR
+                  Submit
                 </button>
                <button
                type="reset"
                 name="reset"
                 class="btn btn-lg player-btn"
                   >
-                  BORRAR
+                  Clean
                 </button>
               </div>
             </form>
