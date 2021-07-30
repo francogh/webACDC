@@ -1,88 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/0b51214ed8.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/scrollreveal.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/estilos.css" />
-    <link rel="shortcut icon" href="../img/iconacdc.png" />
-    <title>Historia</title>
-  </head>
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0b51214ed8.js" crossorigin="anonymous"></script>
+    <script src="./js/scrollreveal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type='text/javascript'>
+        $(document).ready(function(){ 
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 100) { 
+                    $('#scroll').fadeIn(); 
+                } else { 
+                    $('#scroll').fadeOut(); 
+                } 
+            }); 
+            $('#scroll').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                return false; 
+            }); 
+        });
+        </script>
+    <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />  
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="shortcut icon" href="../img/iconacdc.png">
+  <title>Historia</title>
+</head>
 
-  <body class="body-form">
-    <header>
-      <nav
-        class="navbar fixed-top .navbar-fixed-top navbar-expand-lg navbar-dark"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img class="icon-img" src="../img/E3tpmTntpdZ7E3teKXjAgQ.gif" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Idioma
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../english/contacten.html">Ingles</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="../contact.html">Español</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../english/indexen.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../english/historiaen.html">History</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../english/integrantesen.html">Members</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="nav-link-spotify" href="../english/spotifyen.html"><i class="fab fa-spotify"></i>Spotify</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../english/newsen.html">News</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../english/contacten.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-
+<body>
+  <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+  <header>
+    <nav class="navbar fixed-top .navbar-fixed-top navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="icon-img" src="../img/E3tpmTntpdZ7E3teKXjAgQ.gif" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Idioma
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../english/contacten.html">Ingles</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../contact.html">Español</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../english/indexen.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../english/historiaen.html">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../english/integrantesen.html">Members</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link-spotify" href="../english/spotifyen.html"><i class="fab fa-spotify"></i>Spotify</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../english/newsen.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../english/contacten.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
     <section class="contact-page">
       <div class="container">
         <div class="row contact-wrap container__form">
