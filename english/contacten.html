@@ -2,38 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0b51214ed8.js" crossorigin="anonymous"></script>
-    <script src="./js/scrollreveal.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type='text/javascript'>
-        $(document).ready(function(){ 
-            $(window).scroll(function(){ 
-                if ($(this).scrollTop() > 100) { 
-                    $('#scroll').fadeIn(); 
-                } else { 
-                    $('#scroll').fadeOut(); 
-                } 
-            }); 
-            $('#scroll').click(function(){ 
-                $("html, body").animate({ scrollTop: 0 }, 600); 
-                return false; 
-            }); 
-        });
-        </script>
-    <title>Document</title>
+  <script src="https://kit.fontawesome.com/0b51214ed8.js" crossorigin="anonymous"></script>
+  <script src="./js/scrollreveal.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type='text/javascript'>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('#scroll').fadeIn();
+        } else {
+          $('#scroll').fadeOut();
+        }
+      });
+      $('#scroll').click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+      });
+    });
+  </script>
+  <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet" />
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />  
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
   <link rel="stylesheet" href="../css/estilos.css" />
   <link rel="shortcut icon" href="../img/iconacdc.png">
   <title>Historia</title>
@@ -52,168 +49,126 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Idioma
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../english/contacten.html">Ingles</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../contact.html">Español</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../english/indexen.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../english/historiaen.html">History</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../english/integrantesen.html">Members</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="nav-link-spotify" href="../english/spotifyen.html"><i class="fab fa-spotify"></i>Spotify</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../english/newsen.html">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../english/contacten.html">Contact</a>
-              </li>
-            </ul>
-          </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Idioma
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../english/contacten.html">Ingles</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="../contact.html">Español</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../english/indexen.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../english/historiaen.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../english/integrantesen.html">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-link-spotify" href="../english/spotifyen.html"><i
+                  class="fab fa-spotify"></i>Spotify</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../english/newsen.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../english/contacten.html">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
   </header>
-    <section class="contact-page">
-      <div class="container">
-        <div class="row contact-wrap container__form">
-          <div class="col-md-6 col-md-offset-3">
-            <div id="sendmessage">Your message has been sent, thank you!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-                <h2 class="title-form">Contact Form</h2>
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control"
-                  id="name"
-                  placeholder="Name"
-                  data-rule="minlen:4"
-                  data-msg="Please enter at least 4 characters"
-                />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  id="email"
-                  placeholder="E-mail"
-                  data-rule="email"
-                  data-msg="Please enter a valid email"
-                />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="subject"
-                  id="subject"
-                  placeholder="Contact subject"
-                  data-rule="minlen:4"
-                  data-msg="Please enter at least 4 characters"
-                />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea
-                  class="form-control"
-                  name="message"
-                  rows="5"
-                  data-rule="required"
-                  data-msg="Please enter a message"
-                  placeholder="Message"
-                ></textarea>
-                <div class="validation"></div>
-              </div>
-              <div class="text-center">
-                <button
-                  type="submit"
-                  name="submit"
-                  class="btn btn-lg player-btn"
-                  required="required"
-                >
-                  Submit
-                </button>
-               <button
-               type="reset"
-                name="reset"
-                class="btn btn-lg player-btn"
-                  >
-                  Clean
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <ul class="icon-redes">
-              <li>
-                <a href="https://es-la.facebook.com/acdc" target="_blank"
-                  ><i class="fab fa-facebook-square fa-2"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/acdc/?hl=es-la"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UCB0JSO6d5ysH2Mmqz5I9rIw"
-                  ><i class="fab fa-youtube"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/acdc?lang=es"
-                  ><i class="fab fa-twitter-square"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="copyright">
-              &copy; Copyright <strong>Autor Franco Ghiotti</strong>. All Rights
-              Reserved
+  <section class="contact-page">
+    <div class="container">
+      <div class="row contact-wrap container__form">
+        <div class="col-md-6 col-md-offset-3">
+          <div id="sendmessage">Your message has been sent, thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <h2 class="title-form">Contact Form</h2>
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4"
+                data-msg="Please enter at least 4 characters" />
+              <div class="validation"></div>
             </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email"
+                data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Contact subject"
+                data-rule="minlen:4" data-msg="Please enter at least 4 characters" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required"
+                data-msg="Please enter a message" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center">
+              <button type="submit" name="submit" class="btn btn-lg player-btn" required="required">
+                Submit
+              </button>
+              <button type="reset" name="reset" class="btn btn-lg player-btn">
+                Clean
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="icon-redes">
+            <li>
+              <a href="https://es-la.facebook.com/acdc" target="_blank"><i class="fab fa-facebook-square fa-2"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/acdc/?hl=es-la"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCB0JSO6d5ysH2Mmqz5I9rIw"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/acdc?lang=es"><i class="fab fa-twitter-square"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="copyright">
+            &copy; Copyright <strong>Autor Franco Ghiotti</strong>. All Rights
+            Reserved
           </div>
         </div>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/reprod.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-    <script src="contactform/contactform.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="../js/reprod.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="contactform/contactform.js"></script>
+</body>
+
 </html>
