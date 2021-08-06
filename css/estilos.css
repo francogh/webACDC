@@ -168,11 +168,76 @@ body{
   .icon-redes li{
     list-style: none;
     display: inline-flex;
-    font-size: 30px;
+
     
     padding: 10px;
   }
+  .icon-redes li a{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 32px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000;
+  }
+  .icon-redes li a .fa{
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  .icon-redes li a:before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(207, 207, 207);
+    transition: 0.5s;
+  }
+  .icon-redes li a:hover:before{
+    top: 0;
+  }
+  .icon-redes li a:hover .fa-facebook{
+    transform: rotateY(360deg);
+    color: #3b5998;
+  }
+  .icon-redes li a:hover .fa-twitter{
+    transform: rotateY(360deg);
+    color: #1fa1f2;
+  }
+  .icon-redes li a:hover .fa-youtube{
+    transform: rotateY(360deg);
+    color: #db4437;
+  }
+  
+  .icon-redes li a:hover .fa-instagram{
+    transform: rotateY(360deg);
+    color: #e1306c;
+  }
 
+  @media (max-width: 500px){
+    .icon-redes li a{
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 20px;
+    }
+    .icon-redes li{
+      padding: 0px;
+    }
+    #footer .copyright {
+      font-size: 10px;
+    }
+  }
 
   /*******************integrantes************************/
   .action__cont{
