@@ -13,6 +13,8 @@ playPause.addEventListener("click", () => {
     }
 });
 
+
+
 // let previus = document.querySelector('#back');
 // let next = document.querySelector('#next');
 // let track_image = document.querySelector('#back');

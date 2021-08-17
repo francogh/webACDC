@@ -24,6 +24,7 @@
   <header>
     <nav class="navbar fixed-top .navbar-fixed-top navbar-expand-lg navbar-dark">
       <div class="container-fluid">
+        <!--------------------GIF LOGO------------->
         <a class="navbar-brand" href="#"><img class="icon-img" src="../img/E3tpmTntpdZ7E3teKXjAgQ.gif" alt="" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,6 +33,7 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
+              <!--------------------BTN CAMBIO IDIOMA------------->
                 <div class="btn-group">
                   <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     Idioma
@@ -80,8 +82,10 @@
         </div>
       </div>
       <div class="player__album">
+        <!--------------------IMAGEN DE REPRODUCTOR------------->
         <img src="../img/images.jpg" alt="" class="player__img" id="track_image"/>
       </div>
+      <!--------------------ARTISTA Y NOMBRE DE CANCION------------->
       <h2 class="player__artist" id="artist">AC/DC</h2>
       <h3 class="player__song" id="title">Thunderstruck</h3>
       <input type="range" value="20" min="0" class="player__level" />
@@ -89,24 +93,28 @@
         <div class="start">00:01</div>
         <div class="end">4:30</div>
       </div>
+      <!--------------------CANCION------------->
       <audio class="player__audio" controls id="audio">
         <source src="../media/song.mp3" type="audio/mpeg" id="song"/>
       </audio>
       <div class="player__controls">
+        <!--------------------BOTON ATRAS------------->
         <div class="player__btn player__btn--medium" id="back">
           <i class="fas fa-backward"></i>
         </div>
+        <!--------------------BOTON PLAY------------->
         <div class="player__btn player__btn--medium blue" id="play">
           <i class="fas fa-play play-btn"></i>
           <i class="fas fa-pause pause-btn hide"></i>
         </div>
-
+        <!--------------------BOTON SIGUIENTE------------->
         <div class="player__btn player__btn--medium" id="next">
           <i class="fas fa-forward"></i>
         </div>
       </div>
     </div>
   </div>
+  <!--------------------FOOTER------------->
   <footer id="footer">
     <div class="container">
       <div class="row">
