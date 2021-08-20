@@ -1,10 +1,14 @@
 const audio = document.getElementById("audio");
 const playPause = document.getElementById("play");
 
+function pasarCancion(){
+    document.getElementById('song').src="./media/song2.mp3";
+}
+
 playPause.addEventListener("click", () => {
     if (audio.paused || audio.ended){
         playPause.querySelector('.pause-btn').classList.toggle('hide');
-        playPause.querySelector('.play-btn').classList.toggle('hide')
+        playPause.querySelector('.play-btn').classList.toggle('hide');
         audio.play();
     } else {
         audio.pause();
