@@ -20,6 +20,7 @@ body{
     font-family: 'PT sans', sans-serif;
     background-color: rgb(2, 2, 2);
 }
+/* IMAGEN DE FONDO INDEX */
 
 .header-ind{
     width: 100%;
@@ -28,6 +29,8 @@ body{
     background-size: cover;
     position: relative;
 }
+
+/* IMAGEN DE FONDO 800PX 526PX */
 @media (max-width: 800px){
     .header-ind{
         background: url(../img/N4hL7I.jpg) no-repeat fixed;
@@ -35,7 +38,7 @@ body{
         background-size: contain;
     }
 }
-
+/* IMAGEN DE FONDO MOVIL */
 @media (max-width: 525px){
     .header-ind{
         background: url(../img/N4hL7I300.jpg) no-repeat fixed;
@@ -84,6 +87,8 @@ body{
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     opacity: 0.7;
 } 
+
+/* TEXTO INDEX PARA TABLET Y MOVIL */
 @media (max-width: 1000px){
     .about {
         
@@ -377,7 +382,7 @@ body{
   margin-bottom: 5px;
 
 }
-/*******************integrantes INGLES************************/
+
 /***********************ACORDION INTEGRANTES ***********************/
 
 @media (min-width: 1000px){
@@ -464,7 +469,10 @@ body{
 .accordion-body p{
   animation: fadeInUp;
     animation-duration: 1s;
+
 }
+
+
 
 /*********************HISTORI******************/
 
@@ -766,6 +774,10 @@ body{
   transition: all 0.5s linear;
 }
 
+.margin-news .new{
+  margin-bottom: 20px;
+}
+
 
 /*********************CONTACT FORM********************/
 
@@ -971,6 +983,9 @@ background: #2c2c2c;
 .info-news a{
   text-decoration: none;
   color: #B70000;
+}
+.info-news p{
+  margin-bottom: 20px;
 }
 
 .info-news a:hover{
